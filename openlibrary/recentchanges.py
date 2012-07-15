@@ -87,7 +87,6 @@ class OpenLibraryRecentChangesClient(common.OpenLibraryClient):
                         if isinstance(month, str):
                             if MONTH_REGEX_OBJECT.match(month):
                                 self.month = month
-
                                 if day is not None:
                                     if isinstance(day, str):
                                         if DAY_REGEX_OBJECT.match(day):
